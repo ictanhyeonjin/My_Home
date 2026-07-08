@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Backend
+myHome-be/target/
+myHome-be/logs/
+
+# Frontend
+myHome-fe/node_modules/
+myHome-fe/dist/
+
+# Env
+.env
+.env.*
+!.env.example

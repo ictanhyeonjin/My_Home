@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: local
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallback-to-system-locale: false
+    always-use-message-format: true
+mybatis:
+  mapper-locations: classpath:mappers/**/*.xml
+  config-location: classpath:mybatis-config.xml
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force-response: true
+  port: 8080
