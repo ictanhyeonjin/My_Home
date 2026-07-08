@@ -1,6 +1,6 @@
 # My Home
 
-청약 공공 API 기반 청약 정보 조회 서비스를 위한 FE + BE 프로젝트입니다.
+FE + BE project for a housing subscription information service.
 
 ## Structure
 
