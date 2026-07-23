@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:../.env[.properties],optional:file:.env[.properties]
   profiles:
     active: local
   messages:
@@ -17,3 +19,15 @@ server:
       enabled: true
       force-response: true
   port: 8080
+
+lh:
+  open-api:
+    base-url: http://apis.data.go.kr/B552555/lhLeaseNoticeInfo1/lhLeaseNoticeInfo1
+    detail-base-url: http://apis.data.go.kr/B552555/lhLeaseNoticeDtlInfo1/getLeaseNoticeDtlInfo1
+    service-key: ${LH_SERVICE_KEY:${SERVICE_KEY:}}
+    page-size: 100
+    max-pages: 20
+    default-upp-ais-tp-cd: ""
+    scheduler-enabled: true
+    scheduler-initial-delay-ms: 10000
+    scheduler-fixed-rate-ms: 3600000

@@ -1,2 +1,7 @@
 @echo off
-call "%~dp0myHome-be\run-be.cmd"
+
+pushd "%~dp0myHome-be"
+
+call run-be.cmd
+
+popd
